@@ -1,0 +1,19 @@
+<header>
+    <div class="flex">
+        <img src="../assets/logo.png" class="logo"/>
+        <h3 class="headerTitle">JackPot Burger</h3>
+    </div>
+    <nav>
+        <ul class="ulHeader">
+            <!--LI representa um item de lista-->
+            <li class="liHeader" (click)="scrollToSection('secaoSobre')"><a>Sobre Nos</a></li>
+            <li class="liHeader" (click)="scrollToSection('secaoProduto')"><a>Promoções</a></li>
+            <li class="liHeader" (click)="scrollToEnd()"><a>Pedido</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<app-comp-sobre-nos id="secaoSobre"></app-comp-sobre-nos>
+
+<app-comp-promocoes id="secaoProduto" ></app-comp-promocoes>

@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+    background-image: url('./assets/cassinoImg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* A imagem ficará fixa enquanto a página é rolada */
+    height: 100vh; /* Altura igual à altura da viewport */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloSecao{
+    text-align: center;
+    margin-top: 5%;
+}

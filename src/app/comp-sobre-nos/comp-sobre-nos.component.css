@@ -1,0 +1,29 @@
+.card{
+    margin: 2% 26%;
+    border-radius: 15px;
+}
+.introducao
+{
+    background-color: burlywood;
+
+}
+.jogos{
+    background-color: rgb(166, 166, 244);
+}
+
+.endIntro{
+    background-color: pink;
+}
+
+.introducaoNos{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.introducaoNos p {
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    /*word-wrap: break-word;*/
+}

@@ -1,0 +1,39 @@
+<div class="divsoriaProd"></div>
+<div class="bodyPromos">
+    <h1 style="color:rgb(55, 192, 192)" class="tituloSecao">Promoções do dia</h1>
+    <br>
+    <div class="cardPromoBody">
+        <div class="cardPromo" id="choseBurger" [ngClass]="{ 'promoSelect': item.id === burger?.id }" *ngFor="let item of promo" (click)="clickEscolhaProd(item.id)" data-id="{{ item.id }}" >
+            <p class="nome"><strong>{{item.id}}. {{ item.name }}</strong></p>
+            <img class="imgBurger" src="{{ item.img }}"/>
+            <p class="preco">{{ item.preco }}</p>
+            <p class="detalhes">{{ item.detalhes }}</p>
+        </div>
+    </div>
+    <br>
+    <div class="SelAndButBody">
+        <h3 class="SecondTitle" style="color:rgb(55, 192, 192)">Reserve já seu o jogo:</h3>
+        <div class="selectEButton">
+            <select class="select" [(ngModel)]="select1" (change)="onChange()">
+                <option *ngFor="let j of jogos" [value]="j">
+                    {{ j }}
+                </option>
+            </select>
+        </div>
+        <button class="buttonPedido" (click)="carregaPedido()">Carregar Pedido</button>
+    </div>
+    <div>
+    
+    <div class="div-listaDePedidos">
+        <h3 style="color:rgb(55, 192, 192)" class="SecondTitle">Pedidos:</h3>
+        <p class="p-pedidos {{displayPedido}}">
+                Lanche:   {{ pedidos.nome }} <br>
+                Jogo:   {{ pedidos.jogo }} <br>
+                Mesa reservada:   {{ pedidos.mesa }} <br>
+                Preço:   {{ pedidos.preco }} 
+            </p>
+        
+        <p class="{{displayErro}}">{{ erroList }}</p>
+    </div>
+    </div>
+</div>
