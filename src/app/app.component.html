@@ -9,11 +9,15 @@
             <li class="liHeader" (click)="scrollToSection('secaoSobre')"><a>Sobre Nos</a></li>
             <li class="liHeader" (click)="scrollToSection('secaoProduto')"><a>Promoções</a></li>
             <li class="liHeader" (click)="scrollToEnd()"><a>Pedido</a></li>
-
         </ul>
+        <button mat-button [matMenuTriggerFor]="menu">Selecione a página</button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/" routerLinkActive="active">Inicio</button>
+            <button mat-menu-item routerLink="/contato" routerLinkActive="active">Contato</button>
+            <button mat-menu-item routerLink="/localizacao" routerLinkActive="active">Localizacao</button>
+            <button mat-menu-item routerLink="/cassinos" routerLinkActive="active">Cassinos</button>
+            <button mat-menu-item routerLink="/trabalheConosco" routerLinkActive="active">Trabalhe Conosco</button>
+        </mat-menu>
     </nav>
 </header>
-
-<app-comp-sobre-nos id="secaoSobre"></app-comp-sobre-nos>
-
-<app-comp-promocoes id="secaoProduto" ></app-comp-promocoes>
+<router-outlet></router-outlet>

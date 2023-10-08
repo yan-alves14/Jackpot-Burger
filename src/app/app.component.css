@@ -26,13 +26,14 @@ header{
 .headerTitle{
     margin-top: 5%;
     margin-left: 10%;
+    padding: 15px;
 }
 
 .ulHeader{
     
     margin-right: 20px;
     margin-top: 7.5%;
-    
+    display: inline-flex;
     list-style: none;
     
 }

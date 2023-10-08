@@ -1,0 +1,19 @@
+.Map_visao{
+    width: 550px;
+    margin: 0 auto;
+}
+
+.Mapa{
+    padding-top: 5%;
+    padding-bottom: 15%;
+    background-color: rgb(33, 33, 33);
+    /* background-image: url('../../assets/cassino-mesa-verde.jpg'); */
+    /* background-size: auto; */
+    
+}
+
+.titulo_mapa{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(208, 121, 255);
+}

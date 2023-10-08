@@ -1,0 +1,45 @@
+<div class="trabConoscoBody">
+    <h2 class="titulosC">Trabalhe conosco:</h2>
+    <p style="text-align: right; margin-right: 10px;">
+        <script type="text/javascript">
+            document.write (dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+        </script>
+    </p>
+    <p class = "entreCont">
+        Entre em contato e mande seu curruculo.
+        <br>
+    </p>
+        <form name="frmContato" method="get" action="mailto:tste@gmail.com" target="_blank">
+            <fieldset>
+                <legend>Dados</legend>
+                <label for="nomesobrenome">* Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                <label for="email">* E-mail</label> 
+                <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="mensagem">* Curriculo</label>
+                <input type="file" cols="70" rows="10" id="mensagem" class="input-padrao"/>
+
+                <label for="contato" class="radioBt">Como prefere o nosso contato?
+                <input type="radio" name="Contato" value="radio-mail">E-mail
+                <input type="radio" name="Contato" value="radio-telefone">Telefone
+                <input type="radio" name="Contato" value="radio-whatapp">Whats-App
+                </label>
+                <br>
+                
+                <label for="horario">Para qual aréa você deseja concorrer?
+                <select>
+                    <option>Selecione</option>
+                    <option>Cozinha</option>
+                    <option>Limpeza</option>
+                    <option>Administração</option>
+                    <option>T.I</option>
+                    <option>Croupier</option>
+                </select>
+            </label>
+            <br>
+        </fieldset>
+        <input type="submit" value="Enviar formulário" class="enviar">
+    </form>
+</div>

@@ -1,6 +1,6 @@
 <div class="divsoriaProd"></div>
 <div class="bodyPromos">
-    <h1 style="color:rgb(55, 192, 192)" class="tituloSecao">Promoções do dia</h1>
+    <h1 style="color:rgb(55, 192, 192); -webkit-text-stroke: 1px black; font-size: 35px;" class="tituloSecao">Promoções do dia</h1>
     <br>
     <div class="cardPromoBody">
         <div class="cardPromo" id="choseBurger" [ngClass]="{ 'promoSelect': item.id === burger?.id }" *ngFor="let item of promo" (click)="clickEscolhaProd(item.id)" data-id="{{ item.id }}" >
